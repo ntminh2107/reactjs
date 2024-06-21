@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind typography;
+@import "daisyui/dist/full.css";
+
+.product-detail {
+  max-width: 1200px;
+  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  border-color: black;
+  @apply flex-col md:flex-row;
+}
+
+.product-container {
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.product-image img {
+  aspect-ratio: 1/1;
+  height: 600;
+  width: 480;
+}
+.product-image {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.rating-static .mask {
+  pointer-events: none; /* Ngăn người dùng tương tác với các ngôi sao */
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price {
+  font-weight: 700;
+  color: red;
+}
+.product-description {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.product-category {
+  font-weight: 700;
+}
+.product-category span {
+  font-weight: 400;
+}
+
+.buy-add-to-cart {
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 15px;
+}
